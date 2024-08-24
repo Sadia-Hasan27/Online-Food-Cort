@@ -1,0 +1,177 @@
+<section class="testimonials">
+    <h2>Testimonials</h2>
+    <h3>Our Happy Client Says</h3>
+    <div class="testimonial-container"><!--testimoni-bar-->
+        <div class="testimonial" id="testimonial"><!--wrap-con-->
+            <div class="testimonial-content"><!--wraper-->
+                <button class="prev-btn">&#8249;</button>
+                <div class="testimonial-text">
+                    <h4></h4>
+                    <p></p>
+                    <blockquote></blockquote>
+                </div>
+                <button class="next-btn">&#8250;</button>
+            </div>
+                <div class="testimonial-image">
+                    <img src="fast-food-banner.png" alt="Food Image">
+                </div>
+            
+        </div>
+    </div>
+</section> 
+
+/* Testimonials Section */
+.testimonials {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.testimonials h2 {
+    color: #ff8800;
+}
+
+.testimonials h3 {
+    font-size: 24px;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.testimonial-container {
+    width: 723px;
+    height: 445px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 35px 0px 0px 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+.testimonial-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    flex: 1;
+}
+
+.testimonial-text {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-text img {
+    width: 76px;
+    height: 76px;
+    opacity: 0;
+}
+
+.testimonial-text h4 {
+    margin: 0;
+    font-size: 18px;
+    color: #222;
+}
+
+.testimonial-text p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #888;
+}
+
+.testimonial-text blockquote {
+    font-style: italic;
+    color: #555;
+    margin: 10px 0 0;
+}
+
+.testimonial-image img {
+    margin-left: 20px;
+    max-width: 200px;
+}
+
+.prev-btn, .next-btn {
+    background-color: #ff8800;
+    border: none;
+    color: white;
+    font-size: 24px;
+    border-radius: 50%;
+    padding: 10px 15px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+.prev-btn {
+    margin-right: 10px;
+}
+
+.next-btn {
+    margin-left: 10px;
+}
+
+<!--js-->
+document.addEventListener("DOMContentLoaded", function() 
+{
+    
+        const testimonials = [
+            {
+                name: "Willians Jhone",
+                title: "CEO & Co-Founder",
+                quote: "Deliciously healthy",
+                image: "fast-food-banner.png"
+            },
+            {
+                name: "Emily Doe",
+                title: "Marketing Head",
+                quote: "Top-Notch!!",
+                image: "fast-food-banner.png"
+            },
+            {
+                name: "John Smith",
+                title: "Product Manager",
+                quote: "Services Amazing",
+                image: "fast-food-banner.png"
+            },
+            {
+                name: "Jane Doe",
+                title: "Sales Manager",
+                quote: "Gonna back again!",
+                image: "fast-food-banner.png"
+            }
+        ];
+    
+        let currentIndex = 0;
+    
+        const testimonialElement = document.getElementById("testimonial");
+        const prevBtn = document.querySelector(".prev-btn");
+        const nextBtn = document.querySelector(".next-btn");
+    
+        function updateTestimonial(index) {
+            const testimonial = testimonials[index];
+            testimonialElement.querySelector("h4").textContent = testimonial.name;
+            testimonialElement.querySelector("p").textContent = testimonial.title;
+            testimonialElement.querySelector("blockquote").textContent = testimonial.quote;
+            testimonialElement.querySelector(".testimonial-image img").src = testimonial.image;
+        }
+    
+        prevBtn.addEventListener("click", () => {
+            currentIndex = (currentIndex === 0) ? testimonials.length - 1 : currentIndex - 1;
+            updateTestimonial(currentIndex);
+        });
+    
+        nextBtn.addEventListener("click", () => {
+            currentIndex = (currentIndex === testimonials.length - 1) ? 0 : currentIndex + 1;
+            updateTestimonial(currentIndex);
+});

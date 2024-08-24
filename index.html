@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <link rel="stylesheet" href="./root.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   
+
+</head>
+
+<body>
+    <!--header section-->
+    <header class="container">
+        <div class="logo">
+            <img src="./images/Untitled-1 1.png" alt="Logo">
+
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Cart</a></li>
+            </ul>
+        </nav>
+        <div class="search-cart">
+            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                    </svg></a></li>
+                   
+                    <form onsubmit="subcrib(event)" class="form3" style="gap:30px;"><input class="input3" type="text" name="search" placeholder="search">
+                        
+                    </form>      
+            <!--<p style="gap:30px;"><b>search</b></p>
+            <input type="text" placeholder="Search">-->
+
+            <div class="cart-icon">
+                <div class="divider"></div>
+                <img src="./images/cart icon.png" alt="Cart" width="35px" height="20px">
+            </div>
+
+        </div>
+
+    </header>
+
+    <div class="delivery">
+        <button>
+            <p style="color:rgb(244, 80, 21);font-size: 10px;">Bike delivery</p>
+            <img src="./images/delivery_bike-removebg-preview.png">
+        </button>
+    </div>
+
+    <!--bannar section-->
+    <section class="bannar-container container">
+        <div class="bannar-text">
+            <h1><b>THE FASTEST<br><span class="highlite">DELIVERY</span><br>IN <span class="highlite">YOUR
+                        CITY</span></b></h1>
+            <div class="bannar-post">
+                <p style="font-size: 12px;padding:50px 0px;">At FOOD, we make dining easy. With a few clicks, you can
+                    explore a wide variety of cuisines and order from your favorite local restaurants. We’re dedicated
+                    to bringing you delicious <br>meals, fresh ingredients, and fast delivery, all while supporting
+                    local businesses. Whether <br>it’s a quick lunch or a cozy dinner at home, we’re here to satisfy
+                    your cravings with <br>convenience and care.</p>
+                <img src="./images/Abstract.png">
+            </div>
+
+            <div class="order-cont">
+                <button class="order-button1">
+                    <p style="color:white;font-weight: 600;">Order Now</p>
+                </button>
+                <button class="order-but2">
+                    <img src="./images/triangle-removebg-preview.png">
+                </button>
+                <span style="font-weight: 600;">Order Process</span>
+            </div>
+        </div>
+
+        <div class="ban-product">
+            <div class="product-con">
+                <img src="./images/burger_sandwich_PNG4135 1.png">
+                <h3><b>Burger</b></h3>
+                <p>Mashroom souce</p>
+                <span>240TK</span>
+            </div>
+            <div class="product-con">
+                <img src="./images/Combo-Junk-Food-PNG-Image 2.png" style="padding:10px 0px;">
+                <h3><b>Food Combo</b></h3>
+                <p>Chef Special</p>
+                <span>1000TK</span>
+            </div>
+            <div class="product-con">
+                <img src="./images/pizza-png-12 1.png" style="padding:15px 0px;">
+                <h3><b>Pizza</b></h3>
+                <p>Mozzorella Chess</p>
+                <span>900TK</span>
+            </div>
+            <div class="product-con">
+                <img src="./images/purepng 1.png">
+                <h3><b>Cake</b></h3>
+                <p>Chocolate Mud</p>
+                <span>1200TK</span>
+            </div>
+        </div>
+
+    </section>
+
+    <!--about section-->
+    <section class="about-container">
+        <div class="about">
+            <div class="about-box">
+                <div class="ab-icon">
+                    <li style="list-style: none;"><a href="#" style="text-decoration: none;"><i
+                                style="font-size:24px;color:white;width: 32px;height: 30px;padding-left: 1px;"
+                                class="fa">&#xf017;</i></a></li>
+                </div>
+                <h3>Today 10:00am - 10:00pm</h3>
+                <span>Working Time</span>
+            </div>
+            <div class="divider2"></div>
+        </div>
+        <div class="about">
+            <div class="about-box2">
+                <div class="ab-icon">
+                    <li style="list-style: none;"><a href="#" style="text-decoration: none;"><i
+                                style="font-size:24px;color:white;width: 32px;height: 30px;padding-left: 3.5px;"
+                                class='fas fa-map-marker-alt'></i></a></li>
+                </div>
+                <h3>Kazirdawri, Chittagong</h3>
+                <span>Our Location</span>
+            </div>
+            <div class="divider3"></div>
+        </div>
+        <div class="about">
+            <div class="about-box3">
+                <div class="ab-icon">
+                    <li style="list-style: none;"><a href="#" style="text-decoration: none;"><i
+                                style="font-size:24px;color:white;width: 25px;height: 30px;padding-left: 1px;"
+                                class='fas fa-phone'></i></a></li>
+                </div>
+                <h3>+8801567942361</h3>
+                <span>Phone Number</span>
+            </div>
+
+        </div>
+
+
+
+
+
+
+    </section>
+
+    <!--cart section-->
+    <section class="cart-container">
+        <div class="cart-text">
+            <h1><b>Menu</b></h1>
+            <p>Most Popular Items</p>
+        </div>
+        <div class="cart-bars">
+            <div class="products">
+                <div class="product-img">
+                    <img src="./images/menu1.png">
+                </div>
+
+                <div class="menu-con">
+                    <div class="menu-txt-cont">
+                        <h3><b>Gyro Sandwhic</b></h3>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+
+                    <div class="menu-rev-con">
+                        <div class="menu-rev">
+                            <span class="fa fa-star" style="color:#ff8800;font-size: 12px;padding-top:5px;"></span>
+                            <p>4.9</p>
+                        </div>
+                        <span>250TK</span>
+                    </div>
+                </div>
+            </div>
+            <div class="products">
+                <div class="product-img">
+                    <img src="./images/menu2.png">
+                </div>
+
+                <div class="menu-con">
+                    <div class="menu-txt-cont">
+                        <h3><b>Enchilad</b></h3>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+
+                    <div class="menu-rev-con">
+                        <div class="menu-rev">
+                            <span class="fa fa-star" style="color:#ff8800;font-size: 12px;padding-top:5px;"></span>
+                            <p>5.0</p>
+                        </div>
+                        <span>350TK</span>
+                    </div>
+                </div>
+            </div>
+            <div class="products">
+                <div class="product-img">
+                    <img src="./images/menu3.png">
+                </div>
+
+                <div class="menu-con">
+                    <div class="menu-txt-cont">
+                        <h3><b>Green Beans</b></h3>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+
+                    <div class="menu-rev-con">
+                        <div class="menu-rev">
+                            <span class="fa fa-star" style="color:#ff8800;font-size: 12px;padding-top:5px;"></span>
+                            <p>4.9</p>
+                        </div>
+                        <span>100TK</span>
+                    </div>
+                </div>
+            </div>
+            <div class="products">
+                <div class="product-img">
+                    <img src="./images/menu4.png">
+                </div>
+
+                <div class="menu-con">
+                    <div class="menu-txt-cont">
+                        <h3><b>Pizza</b></h3>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+
+                    <div class="menu-rev-con">
+                        <div class="menu-rev">
+                            <span class="fa fa-star" style="color:#ff8800;font-size: 12px;padding-top:5px;"></span>
+                            <p>5.0</p>
+                        </div>
+                        <span>900TK</span>
+                    </div>
+                </div>
+            </div>
+            <div class="products">
+                <div class="product-img">
+                    <img src="./images/menu5.png">
+                </div>
+
+                <div class="menu-con">
+                    <div class="menu-txt-cont">
+                        <h3><b>Chicken Pie</b></h3>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+
+                    <div class="menu-rev-con">
+                        <div class="menu-rev">
+                            <span class="fa fa-star" style="color:#ff8800;font-size: 12px;padding-top:5px;"></span>
+                            <p>4.9</p>
+                        </div>
+                        <span>500TK</span>
+                    </div>
+                </div>
+            </div>
+            <div class="products">
+                <div class="product-img">
+                    <img src="./images/menu6.png">
+                </div>
+
+                <div class="menu-con">
+                    <div class="menu-txt-cont">
+                        <h3><b>Green Salad</b></h3>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+
+                    <div class="menu-rev-con">
+                        <div class="menu-rev">
+                            <span class="fa fa-star" style="color:#ff8800;font-size: 12px;padding-top:5px;"></span>
+                            <p>4.9</p>
+                        </div>
+                        <span>120TK</span>
+                    </div>
+                </div>
+            </div>
+            <div class="products hidden">
+                <div class="product-img">
+                    <img src="./images/biriyani (2).jpg">
+                </div>
+
+                <div class="menu-con">
+                    <div class="menu-txt-cont">
+                        <h3><b>Biriyani</b></h3>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+
+                    <div class="menu-rev-con">
+                        <div class="menu-rev">
+                            <span class="fa fa-star" style="color:#ff8800;font-size: 12px;padding-top:5px;"></span>
+                            <p>4.5</p>
+                        </div>
+                        <span>250TK</span>
+                    </div>
+                </div>
+            </div>
+            <div class="products hidden">
+                <div class="product-img">
+                    <img src="./images/rsz_pasta.jpg">
+                </div>
+
+                <div class="menu-con">
+                    <div class="menu-txt-cont">
+                        <h3><b>Creamy Pasta</b></h3>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+
+                    <div class="menu-rev-con">
+                        <div class="menu-rev">
+                            <span class="fa fa-star" style="color:#ff8800;font-size: 12px;padding-top:5px;"></span>
+                            <p>5.0</p>
+                        </div>
+                        <span>300TK</span>
+                    </div>
+                </div>
+            </div>
+            <div class="products hidden">
+                <div class="product-img">
+                    <img src="./images/rsz_ramen.jpg">
+                </div>
+
+                <div class="menu-con">
+                    <div class="menu-txt-cont">
+                        <h3><b>Special Ramen</b></h3>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+
+                    <div class="menu-rev-con">
+                        <div class="menu-rev">
+                            <span class="fa fa-star" style="color:#ff8800;font-size: 12px;padding-top:5px;"></span>
+                            <p>5.0</p>
+                        </div>
+                        <span>350TK</span>
+                    </div>
+                </div>
+            </div>
+            <div class="products hidden">
+                <div class="product-img">
+                    <img src="./images/momos1.jpg">
+                </div>
+
+                <div class="menu-con">
+                    <div class="menu-txt-cont">
+                        <h3><b>Steam Momos</b></h3>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+
+                    <div class="menu-rev-con">
+                        <div class="menu-rev">
+                            <span class="fa fa-star" style="color:#ff8800;font-size: 12px;padding-top:5px;"></span>
+                            <p>4.9</p>
+                        </div>
+                        <span>300TK</span>
+                    </div>
+                </div>
+            </div>
+            <div class="products hidden">
+                <div class="product-img">
+                    <img src="./images/rsz_pastry.jpg">
+                </div>
+
+                <div class="menu-con">
+                    <div class="menu-txt-cont">
+                        <h3><b>Pastry</b></h3>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+
+                    <div class="menu-rev-con">
+                        <div class="menu-rev">
+                            <span class="fa fa-star" style="color:#ff8800;font-size: 12px;padding-top:5px;"></span>
+                            <p>5.0</p>
+                        </div>
+                        <span>600TK</span>
+                    </div>
+                </div>
+            </div>
+            <div class="products hidden">
+                <div class="product-img">
+                    <img src="./images/rsz_soup.jpg">
+                </div>
+
+                <div class="menu-con">
+                    <div class="menu-txt-cont">
+                        <h3><b>Brocoli Soup</b></h3>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+
+                    <div class="menu-rev-con">
+                        <div class="menu-rev">
+                            <span class="fa fa-star" style="color:#ff8800;font-size: 12px;padding-top:5px;"></span>
+                            <p>4.9</p>
+                        </div>
+                        <span>280TK</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cart-more">
+            <button class="see-more">See More Iteams</button>
+        </div>
+    </section>
+
+    <!--service cart-->
+    <section class="service-container">
+        <div class="service-txt">
+            <h1>Services</h1>
+            <p><b>Why Choose Our Food</b></p>
+        </div>
+
+        <div class="service-bar">
+            <div class="service-box">
+                <div class="icon-img">
+                    <img src="./images/spoon1.png">
+                </div>
+                <div class="text">
+                    <h1><b>Quality Food</b></h1>
+                    <p>We maintain proper quality of our food iteams.We collect them directly from farms or shops when
+                        all are remains fresh.We don't use any spoied food here.</p>
+                </div>
+            </div>
+
+            <div class="service-box">
+                <div class="icon-img">
+                    <img src="./images/spoon.png">
+                </div>
+                <div class="text">
+                    <h1><b>Healthy Food</b></h1>
+                    <p>We maintain proper hygine in our kitchen.We try to include food menu which are rich of protines
+                        and vitamins.We use all natural ingredients in our foods.</p>
+                </div>
+            </div>
+
+            <div class="service-box">
+                <div class="icon-img">
+                    <img src="./images/delivery car icon.png">
+                </div>
+                <div class="text">
+                    <h1><b>Fast Delivery</b></h1>
+                    <p>We provide fastest deliver all around in city.We can delivery your foods just in time in your
+                        destination.So you can enjoy your hot meals.</p>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!--testimonial section-->
+    <section class="testimonial-container-main">
+        <div class="testi-txt">
+            <h1>Testimonials</h1>
+            <p style="font-weight: 600;">Our Happy Client Says</p>
+        </div>
+        <div class="testimoni-bar">
+            <div class="wrap-con">
+                <div class="wrapper">
+                    <div class="testimonial">
+                        <img src="./images/person1.jpg">
+                        <h2>Jhon Williaum</h2>
+                    </div>
+                    <p>Their food services, quality, quantity all are best. When delivery man deliverd my food that was still hot and fresh. I always love their food and services. I will rate their food 10/10.</p>  
+                </div>
+                <div class="wrapper">
+                    <div class="testimonial">
+                        <img src="./images/person2.jpg">
+                        <h2>Sadia Chowdhury</h2>
+                    </div>
+                    <p>I love their food always. It's so tasty and quantity is also good.Their few food iteams price range is little bit high but must say these are worthit.</p>  
+                </div>
+                <div class="wrapper">
+                    <div class="testimonial">
+                        <img src="./images/person3.jpg">
+                        <h2>Alexandria Mio</h2>
+                    </div>
+                    <p>I have tried their Biriyani and pasta iteam.Those were so delicious and hot. I enjoyed my meal. I will recomand to try their Biriyani. It's cheap and so good.</p>  
+                </div>
+                
+    
+                <button class="nav-button" id="prev">&#10094;</button>
+                <button class="nav-button" id="next">&#10095;</button>
+            </div>
+            <div class="food-pic">
+                <img src="./images/review food.png">
+            </div>
+    
+        </div>
+        
+    </section>
+    
+
+    <!--subscription section-->
+    <section class="subscription-container">
+        <div class="sub-img">
+            <img src="./images/burger_sandwich_PNG4135 2.png">
+        </div>
+        <div class="sub-txt-con" style="padding-right: 35px;margin-right: 15px;">
+            <h1 style="color:white">Subcrib To Our Newsletter</h1>
+            <p style="color:white;font-size: 15px;padding-bottom: 20px;">Subcrib our page so that you can get our updated news and offers easily and can stay with us always.</p>
+            <div class="sub-button">
+                    <form onsubmit="subcrib(event)" class="form"><input class="input" type="text" name="email" placeholder="Type Your Email" required>
+                <button type="submit">Subcribe</button>
+            </form>
+            </div>
+        </div>
+    </section>
+
+    <!--footer section-->
+    <footer>
+        <div class="footer-container">
+            <div class="foot-sec-1">
+                <div class="logo">
+                    <img src="./images/Untitled-1 1.png" alt="Logo">
+                </div>
+                <p style="font-size: 10px;color:gray;padding:15px 0px;">Food provides best and qualitiful foods.Stay with us and enjoy your best meal.</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    
+                </div>
+            </div>
+            <div class="foot-sec-2">
+                <h1>Opening Restaurant</h1>
+                <p>Sat-Wet: 09:00am-10:00PM<br>Thursdayt: 09:00am-11:00PM<br>Thursdayt: 09:00am-11:00PM</p>
+            </div>
+            <div class="foot-sec-2">
+                <h1>Useful Links</h1>
+                <p>About Us<br>Contact Us<br>Order Delivery<br>Payment & Texs<br>Terms Of Services</p>
+            </div>
+            <div class="foot-sec-3">
+                <h1>Contact Us</h1>
+                <p>Kazirdawri, Chittagong<br>+8801648927365<br>+8801649725893</p>
+                <div class="sub-button2" style="margin-top: 5px;">
+                    <form onsubmit="subcrib(event)" class="form1">
+                        <input class="input1" type="text" name="email" placeholder="Type Your Email" required>
+                    <button type="submit"><i class='fas fa-arrow-circle-right' style='font-size:20px;color:#ff8800;'></i></button>
+            </form>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+    <script src="cart.js"></script>
+    <script src="testimonial.js"></script>
+
+</body>
+
+</html>
